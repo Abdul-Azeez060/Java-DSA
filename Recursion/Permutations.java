@@ -9,11 +9,11 @@ public class Permutations {
             System.out.println(p);
             return;
         }
-        char ch = up.charAt(0);
-        for (int i = 0; i <= p.length(); i++) {
-            String first = up.substring(0, i);
-            String second = up.substring(i);
-            permutations(first + ch + second, up.substring(1));
+
+        for (int i = 0; i < up.length(); i++) {
+            char ch = up.charAt(i);
+            String NewStr = up.substring(0, i) + up.substring(i+1);
+            permutations(p+ch,NewStr);
 
         }
     }
