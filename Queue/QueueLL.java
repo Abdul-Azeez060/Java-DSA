@@ -1,4 +1,4 @@
-
+// Queue using LinkedList
 public class QueueLL {
      static class Node {
          int data;
