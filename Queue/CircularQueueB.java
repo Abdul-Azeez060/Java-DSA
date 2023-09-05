@@ -31,7 +31,7 @@ public class CircularQueueB {
         rear = (rear + 1)%size;
         arr[rear] = n;
     }
-    public int remove() { // O(n) as we are copying the next elements in current index
+    public int remove() { // O(1) as we are copying the next elements in current index
         if (isEmpty()){
             System.out.println("queue is empty");
             return -1;
